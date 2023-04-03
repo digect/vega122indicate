@@ -1,0 +1,14 @@
+/*
+ * File: fuse.txt                                                              *
+ * Created Date: Friday February 22nd 2019                                     *
+ * Author: Potocky Vyacheslav                                                  *
+ * -----                                                                       *                                                                    *
+ * Copyright (c) 2019 Digect.RU                                                *
+ */
+
+LOW:    0xE2
+HIGH:   0xCF
+EXT:    0x01
+
+avrdude -p m48 -c usbasp  -U lfuse:w:0xE2:m -U hfuse:w:0xCF:m
+
